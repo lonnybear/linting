@@ -20,6 +20,16 @@ app.get('/about', (req, res) => {
   res.render('pages/about',{'title':title});
 });
 
+app.get('/projects', (req, res) => {
+  var title = "Projects Page";
+  res.render('pages/projects',{'title':title});
+});
+
+app.get('/contact', (req, res) => {
+  var title = "Contact Page";
+  res.render('pages/contact',{'title':title});
+});
+
 //users index is our list page
 app.get('/users', function(req, res) {
 	var title = 'Users Page';
